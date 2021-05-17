@@ -1,0 +1,20 @@
+PODS:
+  - Project1 (1.0.1)
+  - Project2 (1.0.1)
+
+DEPENDENCIES:
+  - Project1 (~> 1.0.1)
+  - Project2 (~> 1.0.1)
+
+SPEC REPOS:
+  https://github.com/felipebweber/my-repo-podspec.git:
+    - Project1
+    - Project2
+
+SPEC CHECKSUMS:
+  Project1: 13c3566671988330bce9e37715c603e71b2a6ec0
+  Project2: 911e1ddd3e52489f36eb3a79d1e1831385eae6b5
+
+PODFILE CHECKSUM: cfcbc63067046b33900b0bae23db6a6c36d70e68
+
+COCOAPODS: 1.10.1

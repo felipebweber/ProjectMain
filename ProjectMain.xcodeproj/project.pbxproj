@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0C27FCC0807FE7E9A5B5B0 /* Pods_ProjectMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3DE9A240026F5026104E83 /* Pods_ProjectMain.framework */; };
 		35CE82DE2653008C005E0014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE82DD2653008C005E0014 /* AppDelegate.swift */; };
 		35CE82E02653008C005E0014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE82DF2653008C005E0014 /* SceneDelegate.swift */; };
 		35CE82E22653008C005E0014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE82E12653008C005E0014 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B3DE9A240026F5026104E83 /* Pods_ProjectMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE82DA2653008C005E0014 /* ProjectMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE82DD2653008C005E0014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CE82DF2653008C005E0014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		35CE82E62653008F005E0014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CE82E92653008F005E0014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35CE82EB2653008F005E0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9E8D6D7EDA12E3B53C262D /* Pods-ProjectMain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMain.release.xcconfig"; path = "Target Support Files/Pods-ProjectMain/Pods-ProjectMain.release.xcconfig"; sourceTree = "<group>"; };
+		F2C517E5F4A3FFD0FAC5E0D5 /* Pods-ProjectMain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMain.debug.xcconfig"; path = "Target Support Files/Pods-ProjectMain/Pods-ProjectMain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0C27FCC0807FE7E9A5B5B0 /* Pods_ProjectMain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220BBAA9BAFDCAAB81073864 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DE9A240026F5026104E83 /* Pods_ProjectMain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35CE82D12653008C005E0014 = {
 			isa = PBXGroup;
 			children = (
 				35CE82DC2653008C005E0014 /* ProjectMain */,
 				35CE82DB2653008C005E0014 /* Products */,
+				9D1CF5F73D4AE15CF011E475 /* Pods */,
+				220BBAA9BAFDCAAB81073864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = ProjectMain;
 			sourceTree = "<group>";
 		};
+		9D1CF5F73D4AE15CF011E475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2C517E5F4A3FFD0FAC5E0D5 /* Pods-ProjectMain.debug.xcconfig */,
+				DA9E8D6D7EDA12E3B53C262D /* Pods-ProjectMain.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35CE82EE2653008F005E0014 /* Build configuration list for PBXNativeTarget "ProjectMain" */;
 			buildPhases = (
+				35C2EA692A22BB9D8A01A3C9 /* [CP] Check Pods Manifest.lock */,
 				35CE82D62653008C005E0014 /* Sources */,
 				35CE82D72653008C005E0014 /* Frameworks */,
 				35CE82D82653008C005E0014 /* Resources */,
+				A396E65B758EFD4639EEA2C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35C2EA692A22BB9D8A01A3C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectMain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A396E65B758EFD4639EEA2C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectMain/Pods-ProjectMain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectMain/Pods-ProjectMain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectMain/Pods-ProjectMain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35CE82D62653008C005E0014 /* Sources */ = {
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,11 +351,13 @@
 		};
 		35CE82EF2653008F005E0014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C517E5F4A3FFD0FAC5E0D5 /* Pods-ProjectMain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectMain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +371,13 @@
 		};
 		35CE82F02653008F005E0014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9E8D6D7EDA12E3B53C262D /* Pods-ProjectMain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectMain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
